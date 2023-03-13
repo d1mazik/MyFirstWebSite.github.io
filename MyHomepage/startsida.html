@@ -4,8 +4,13 @@
 	<meta charset="UTF-8" />
 	<title>Min hemsida</title>
 	<link href='https://fonts.googleapis.com/css?family=Roboto:900italic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 	<style>
-	body {
+        .name {
+            font-family: 'Sofia', sans-serif;
+        }
+        
+	    body {
 			margin: 0;
 			padding: 0;
 		}
@@ -25,7 +30,7 @@
             height: 60px;
             justify-content: center;
 }
-      nav ul li {
+        nav ul li {
             list-style-type: none;
             margin: 0 10px;
             border: 1px solid #333;
@@ -36,8 +41,11 @@
 			color: rgb(0, 0, 0);
 			text-decoration: none;
 			font-size: 24px;
-			font-family: 'Roboto', sans-serif;
+			font-family: 'Sofia', sans-serif;
 		}
+		nav ul li a.activeButton {
+            color: #fff;
+        }
 		.container {
 			display: flex;
 			flex-direction: row;
@@ -59,14 +67,14 @@
 			margin-top: 0;
 		}
 		p {
-			font-family: 'Roboto', sans-serif;
-			font-size: 20px;
+			font-size: 18px;
 			color: rgb(30, 30, 30);
 			line-height: 1.5;
 			margin-top: 20px;
 			flex-basis: 50%;
 			flex-grow: 1;
 			margin-right: 20px;
+            font-style: italic;
 		}
 		img {
 			display: block;
@@ -81,19 +89,36 @@
 			max-width: 400px;
 			height: auto;
 		}
+        footer {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           height: 50px; 
+           background-color: rgb(149, 149, 149);
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+        }
+        footer p {
+           margin: 0;
+           font-size: 14px;
+        }
 	</style>
 </head>
 <body>
 	<nav>
 		<ul>
-			<li><a href="startsida.html">Startsida</a></li>
+			<li><a href="startsida.html"class="activeButton">Startsida</a></li>
 			<li><a href="portfolio.html">Portfolio</a></li>
 			<li><a href="kontakt.html">Kontakt</a></li>
 		</ul>
 	</nav>
 	<div class="container">
 		<div class="text-container">
-			<h1>Dmitri Gustafsson</h1>
+			<h1 class="name">Dmitri Gustafsson</h1>
 			<p>Hej! Mitt namn är Dmitri och jag läser programmet Javautvecklare på Nackademin. I min utbildning ingår LIA och jag är ute efter en praktikplats.
                 Jag söker en praktikplats där jag kan utvecklas som person, få nya kunskaper inom IT samt förstärka den kompetens som jag redan har. 
                 Jag finner er som mycket attraktiv arbetsplats där jag kan utveckla mig. I bakgrunden har jag 17års arbetserfarenhet inom bilbranschen. 
@@ -106,5 +131,9 @@
 			<img src="images/Dima.jpeg" alt="img">
 		</div>
 	</div>
+    <footer>
+        <hr>
+        <p>Copyright &copy; 2023 - Dmitri Gustafsson - Dmitri.Gustafsson@yh.nackademin.se</p>
+     </footer>
 </body>
 </html>
