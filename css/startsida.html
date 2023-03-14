@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Startsida</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:900italic' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+	<style>
+        .name {
+            font-family: 'Sofia', sans-serif;
+        }
+        nav {
+			background-color: rgb(149, 149, 149);
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		nav ul {
+            margin: 0 auto;
+            max-width: 1000px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style-type: none;
+            margin: 0 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            padding: 5px;
+        }
+		nav ul li a {
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			font-size: 24px;
+			font-family: 'Sofia', sans-serif;
+		}
+		nav ul li a.activeButton {
+            color: #fff;
+        }
+		.container {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			margin: 100px auto 0;
+			max-width: 1000px;
+			padding: 20px;
+			background-color: #f1f1f1;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #ddd;
+		}
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-size: 48px;
+			color: rgb(0, 0, 0);
+			font-style: italic;
+			font-weight: 900;
+			margin-top: 0;
+		}
+		p {
+			font-size: 18px;
+			color: rgb(30, 30, 30);
+			line-height: 1.5;
+			margin-top: 20px;
+			flex-basis: 50%;
+			flex-grow: 1;
+			margin-right: 20px;
+            font-style: italic;
+		}
+		img {
+			display: block;
+			margin: 0;
+			max-width: 100%;
+			height: auto;
+			border-radius: 50%;
+			box-shadow: 0px 0px 10px #333;
+			float: right;
+			margin-left: 20px;
+			margin-bottom: 20px;
+			max-width: 400px;
+			height: auto;
+		}
+        footer {
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           height: 50px; 
+           background-color: rgb(149, 149, 149);
+           color: white;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+        }
+        footer p {
+           margin: 0;
+           font-size: 14px;
+        }
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="startsida.html"class="activeButton">Startsida</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="text-container">
+			<h1 class="name">Dmitri Gustafsson</h1>
+			<p>Hej! Mitt namn är Dmitri och jag läser programmet Javautvecklare på Nackademin. I min utbildning ingår LIA och jag är ute efter en praktikplats.
+                Jag söker en praktikplats där jag kan utvecklas som person, få nya kunskaper inom IT samt förstärka den kompetens som jag redan har. 
+                Jag finner er som mycket attraktiv arbetsplats där jag kan utveckla mig. I bakgrunden har jag 17års arbetserfarenhet inom bilbranschen. 
+                För mig som bilmekaniker var alltid kvalitet och lyhördhet efter kundens behov i fokus trots det höga tempot och höga stressnivån. 
+                Med tanken på min erfarenhet från bilbranschen och strävan efter ny utveckling får ni en stresstålig och nyfiken medarbetare som har kvalitet i fokus.
+                Lite om mig. Jag är 37 år gammal och kommer ursprungligen från Estland. Jag är hemmavarande i Nacka, är gift och är pappa till en underbar dotter på 10 månader. 
+                IT-branschen har alltid varit min dröm och nu har jag äntligen hittat rätt tillfälle för studier för att närma mig min dröm.</p>
+		</div>
+		<div class="image-container">
+			<img src="images/Dima.jpeg" alt="img">
+		</div>
+	</div>
+    <footer>
+        <hr>
+        <p>Copyright &copy; 2023 - Dmitri Gustafsson - Dmitri.Gustafsson@yh.nackademin.se</p>
+     </footer>
+</body>
+</html>
